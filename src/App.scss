@@ -46,7 +46,11 @@
 
 @media screen and (max-width: 1200px) {
 	.product-summaries-container {
-		align-items: start;
-		// width: 70vw;
+		align-items: center;
+		width: 80vw;
+	}
+
+	.product-details-container {
+		display: none;
 	}
 }

@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
+import { useMediaQuery } from 'usehooks-ts'
 
 import Header from './components/Header'
 import './App.scss'
@@ -22,6 +23,7 @@ export interface IProduct {
 function App() {
 	const [products, setProducts] = useState<IProduct[]>([])
 	const [selectedProduct, setSelectedProduct] = useState(0)
+	const matches = useMediaQuery('(max-width: 1200px)')
 
 	useEffect(() => {
 		fetch('https://fakestoreapi.com/products?limit=5')
@@ -38,7 +40,11 @@ function App() {
 						className='product-summaries-container'
 						initial={{ x: '50%' }}
 						animate={{
-							x: selectedProduct ? 0 : '50%',
+							x:
+								selectedProduct ||
+								matches
+									? 0
+									: '50%',
 						}}
 						transition={{ duration: 1 }}>
 						{products.map(product => (
@@ -60,18 +66,7 @@ function App() {
 						))}
 					</motion.div>
 					<motion.div
-						className={`product-details-container`}
-						initial={
-							selectedProduct
-								? {
-										opacity: 1,
-										x: 0,
-								  }
-								: {
-										opacity: 0,
-										x: 150,
-								  }
-						}
+						className='product-details-container'
 						animate={
 							selectedProduct
 								? {
