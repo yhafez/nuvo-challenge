@@ -39,3 +39,9 @@
 	color: white;
 	background-color: rgb(62, 150, 177);
 }
+
+@media screen and (max-width: 1200px) {
+	.chevron-icon {
+		transform: translateY(-2px) translateX(-3px) rotate(90deg);
+	}
+}

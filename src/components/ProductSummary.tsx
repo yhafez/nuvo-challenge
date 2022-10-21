@@ -1,5 +1,5 @@
 import { Dispatch, SetStateAction } from 'react'
-import { TiChevronLeft } from 'react-icons/Ti'
+import { TiChevronLeft } from 'react-icons/ti'
 
 import { IProduct } from '../App'
 import { motion } from 'framer-motion'

@@ -16,3 +16,9 @@
 	font-size: 1.5rem;
 	font-weight: 400;
 }
+
+@media screen and (max-width: 1200px) {
+	.header-container {
+		margin: 0 10vw;
+	}
+}
