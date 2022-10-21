@@ -4,6 +4,7 @@
 
 .products-container {
 	margin-top: 2rem;
+	overflow: hidden;
 }
 
 .product-summaries-container {
@@ -40,7 +41,7 @@
 	justify-content: space-around;
 	align-items: center;
 	width: 100%;
-	overflow-y: hidden;
+	overflow: hidden;
 }
 
 @media screen and (max-width: 1200px) {

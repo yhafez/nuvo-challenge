@@ -29,8 +29,6 @@ function App() {
 			.then(json => setProducts(json))
 	}, [])
 
-	console.log('products', products)
-	console.log(selectedProduct)
 	return (
 		<div className='App'>
 			<Header />
