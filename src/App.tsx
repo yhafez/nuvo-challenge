@@ -67,6 +67,7 @@ function App() {
 					</motion.div>
 					<motion.div
 						className='product-details-container'
+						initial={{ opacity: 0 }}
 						animate={
 							selectedProduct
 								? {
