@@ -1,0 +1,41 @@
+.product-summary-container {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	width: 100%;
+	margin: 3rem auto;
+	cursor: pointer;
+}
+
+.product-image {
+	width: 8rem;
+	cursor: pointer;
+}
+
+.product-title {
+	width: 100%;
+	margin: 0 3rem;
+	cursor: pointer;
+}
+
+.expand-product-button {
+	width: 3.5rem;
+	height: 3.5rem;
+	background-color: transparent;
+	border: 3px solid rgb(62, 150, 177);
+	color: rgb(62, 150, 177);
+	border-radius: 50%;
+	padding: 0;
+	cursor: pointer;
+}
+
+.chevron-icon {
+	width: 3.5rem;
+	height: 3.5rem;
+	transform: translateY(-3px);
+}
+
+.selected {
+	color: white;
+	background-color: rgb(62, 150, 177);
+}
